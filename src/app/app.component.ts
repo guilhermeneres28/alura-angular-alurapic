@@ -10,9 +10,13 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   title = 'alurapic';
 
-  photos = [];
+  photos: Object[] = [];
 
   constructor(http: HttpClient){
+
+    http
+      .get<Object[]>('http://localhost:3000/flavio/photos')
+      .subscribe(photos => this.photos = photos);
 
   }
 }
