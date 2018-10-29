@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { IPhoto } from "./photo";
 
 const API = 'http://localhost:3000';
 
@@ -10,7 +11,7 @@ export class PhotoService {
     constructor(private http: HttpClient){}
 
     listarDeDeterminadoUsuario(nomeUsuario: string){
-       return this.http.get<Object[]>(API + '/flavio/photos');
+       return this.http.get<IPhoto[]>(API + '/flavio/photos');
     }
 
 
