@@ -9,14 +9,4 @@ import { PhotoService } from './photos/photo/photo.service';
 })
 export class AppComponent {
   title = 'alurapic';
-
-  photos: any[] = [];
-
-  constructor(private photoService: PhotoService){}
-
-  ngOnInit(): void {
-    this.photoService
-    .listarDeDeterminadoUsuario('Flavio')
-    .subscribe(photos =>  this.photos = photos);
-  }
 }
