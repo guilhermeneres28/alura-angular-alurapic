@@ -10,8 +10,8 @@ export class PhotoService {
 
     constructor(private http: HttpClient){}
 
-    listarDeDeterminadoUsuario(nomeUsuario: string){
-       return this.http.get<IPhoto[]>(API + '/flavio/photos');
+    listarDeDeterminadoUsuario(userName: string){
+       return this.http.get<IPhoto[]>(API + '/' + userName + '/photos');
     }
 
 
