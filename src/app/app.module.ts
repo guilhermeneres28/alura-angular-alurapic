@@ -10,8 +10,7 @@ import { PhotosModule } from './photos/photos.module';
   ],
   imports: [
     BrowserModule,
-    PhotosModule,
-    HttpClientModule
+    PhotosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
