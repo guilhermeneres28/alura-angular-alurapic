@@ -10,7 +10,17 @@ import { IPhoto } from '../photo/photo';
 })
 export class PhotoListComponent implements OnInit {
 
+
+  /*
+
+      EventBiding - (nomeDoEvento)="expressao" -> Fluxo: Template to Component
+      dataBiding ou property - [nomeDaProperty]="expressao" -> Fluxo: Component to Template
+
+   */
+
+
   photos: IPhoto[] = [];
+  filter = '';
 
   constructor(
     private photoService: PhotoService,
