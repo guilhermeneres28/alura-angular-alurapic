@@ -1,8 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import { PhotoService } from '../photo/photo.service';
-import { ActivatedRoute } from '@angular/router';
-import { IPhoto } from '../photo/photo';
-import {activateRoutes} from '@angular/router/src/operators/activate_routes';
+import {ActivatedRoute} from '@angular/router';
+import {IPhoto} from '../photo/photo';
 import {Subject} from 'rxjs';
 import {debounceTime} from 'rxjs/operators';
 
